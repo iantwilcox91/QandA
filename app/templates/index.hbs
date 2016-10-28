@@ -2,4 +2,10 @@
 
 We hope you find exactly what you're looking for in a place to stay.
 
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.author}}'s question was {{question.content}}'</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
