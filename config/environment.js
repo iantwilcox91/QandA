@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: 'YOUR-API-KEY-HERE',
-      authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
-      databaseURL: 'https://YOUR-FIREBASE-APP.firebaseio.com',
-      storageBucket: 'YOUR-FIREBASE-APP.appspot.com'
+      apiKey: 'AIzaSyDBCpwsCfYnUMi09a9qwx9OCIbx-ck6sao',
+      authDomain: 'qanda-bf1c6.firebaseapp.com',
+      databaseURL: 'https://qanda-bf1c6.firebaseio.com',
+      storageBucket: 'qanda-bf1c6.appspot.com'
     },
 
     APP: {
