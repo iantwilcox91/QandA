@@ -1,3 +1,9 @@
 <li>
-  {{question.author}} asked: {{question.content}}. They also had this to add: {{question.notes}}
+  {{question.author}} asked: {{question.content}}.
+  {{#if areNotesShowing}}
+    <p>They also had this to add: {{question.notes}}</p>
+    <button {{action 'hideNotes'}}>Hide notes</button>
+  {{else}}
+    <button {{action 'showNotes'}}>Show notes</button>
+  {{/if}}
 </li>
