@@ -3,10 +3,21 @@
 We hope you find the answer you're looking for.
 <hr>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 <hr>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+
+<hr>
+<p>test answers</p>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+<hr>
