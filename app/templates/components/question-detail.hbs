@@ -1,3 +1,16 @@
 {{question.author}} asked {{ question.content}}.
 they also added {{question.notes}}
 <button {{action 'delete' question}}>delete</button>
+
+
+<hr>
+
+
+<p>test answers</p>
+<p> answers should be vvv here</p>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+<p> answers should be ^^^ here</p>
