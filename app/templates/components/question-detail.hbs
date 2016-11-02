@@ -1,6 +1,6 @@
-{{question.author}} asked {{ question.content}}.
+{{question.author}} asked {{question.content}}.
 they also added {{question.notes}}
-<button {{action 'delete' question}}>delete</button>
+<!-- <button {{action 'delete' question}}>delete</button> -->
 
 
 <hr>
@@ -9,7 +9,7 @@ they also added {{question.notes}}
 <p>test answers</p>
 <p> answers should be vvv here</p>
 <ul>
-  {{#each model.answers as |answer|}}
+  {{#each question.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
