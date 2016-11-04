@@ -1,4 +1,5 @@
 <li>
+  {{answer-popularity question}}
   {{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} {{/link-to}}
   {{#if areNotesShowing}}
     <p>They also had this to add: {{question.notes}}</p>
