@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
-export function answerPopularity(params/*, hash*/) {
+export function answerPopularity(params) {
   var question = params[0];
 
-  if(question.get('answer').get('length') >= 2) {
+  if(question.get('answers').get('length') >= 2) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
   }
 }

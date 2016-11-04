@@ -2,7 +2,7 @@
 <hr>
 <ul>
   {{#each model.questions as |question|}}
-  (this is where the helper will go)
+    {{answer-popularity question}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
