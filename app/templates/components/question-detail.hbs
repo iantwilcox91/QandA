@@ -7,7 +7,7 @@ they also added {{question.notes}}
 
 <p>Theis is what other users had to say:</p>
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     <hr>
     {{answer-tile answer=answer}}
     <button>like</button> <button>dislike</button>
