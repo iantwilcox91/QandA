@@ -5,11 +5,10 @@ they also added {{question.notes}}
 
 <hr>
 
-<p>Theis is what other users had to say:</p>
+<p>This is what other users had to say:</p>
 <ul>
   {{#each sortedAnswers as |answer|}}
     <hr>
     {{answer-tile answer=answer}}
-    <button>like</button> <button>dislike</button>
   {{/each}}
 </ul>

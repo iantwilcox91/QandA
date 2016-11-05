@@ -28,6 +28,13 @@ export default Ember.Route.extend({
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
+    },
+
+    upRating(){
+      console.log("up");
+    },
+    downRating(){
+      console.log("down");
     }
   }
 });
