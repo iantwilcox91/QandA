@@ -9,12 +9,6 @@ export default Ember.Component.extend({
       if (confirm('Are you sure you want to delete this post?')) {
         this.sendAction('destroyQuestion', question);
       }
-    },
-    upRating(answer){
-      this.sendAction('upRating', answer);
-    },
-    downRating(answer){
-      this.sendAction('downRating', answer);
     }
   }
 });

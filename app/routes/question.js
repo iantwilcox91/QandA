@@ -29,12 +29,5 @@ export default Ember.Route.extend({
       question.destroyRecord();
       this.transitionTo('index');
     },
-
-    upRating(){
-      console.log("up");
-    },
-    downRating(){
-      console.log("down");
-    }
   }
 });

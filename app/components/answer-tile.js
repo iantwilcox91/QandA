@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    addRating(answer){
-      this.sendAction('upRating', answer);
+    addRating(){
+      console.log("up");
     },
-    subtractRating(answer){
-      this.sendAction('downRating', answer);
+    subtractRating(){
+      console.log("down");
     }
   }
 });
