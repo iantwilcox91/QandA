@@ -2,8 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   updateQuestionFormBool: false,
-  action: {
-    updateQuestionFormAction(){
+
+  actions: {
+    updateQuestionFormAction: function() {
       this.set('updateQuestionFormBool', true);
     },
     update(question) {
