@@ -1,0 +1,4 @@
+<hr>
+{{#each favoriteList.favorites as |question|}}
+{{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} {{/link-to}}<br>
+{{/each}}

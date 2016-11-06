@@ -1,10 +1,12 @@
 <li>
   {{answer-popularity question}}
   {{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} {{/link-to}}
+  <button {{action 'addToFavorites' question}}>Add to Favorites</button>
   {{#if areNotesShowing}}
     <p>They also had this to add: {{question.notes}}</p>
     <button {{action 'hideNotes'}}>Hide notes</button>
   {{else}}
     <button {{action 'showNotes'}}>Show notes</button>
   {{/if}}
+
 </li>
