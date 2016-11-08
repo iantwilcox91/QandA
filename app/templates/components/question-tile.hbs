@@ -1,12 +1,13 @@
 <li>
   {{answer-popularity question}}
   {{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} {{/link-to}}
-  <button {{action 'addToFavorites' question}}>Add to Favorites</button>
+  <button {{action 'addToFavorites' question}} class="btn btn-warning">Add to Favorites</button>
   {{#if areNotesShowing}}
-    <p>They also had this to add: {{question.notes}}</p>
-    <button {{action 'hideNotes'}}>Hide notes</button>
+    <p>They also had this to add:</p>
+    <p>{{question.notes}}</p>
+    <button {{action 'hideNotes'}} class="btn btn-success">Hide notes</button>
   {{else}}
-    <button {{action 'showNotes'}}>Show notes</button>
+    <button {{action 'showNotes'}} class="btn btn-success">Show notes</button>
   {{/if}}
 
 </li>
