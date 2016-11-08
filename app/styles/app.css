@@ -8,3 +8,6 @@ body {
 .glyphicon{
   color: blue;
 }
+p.thick {
+    font-weight: bold;
+}

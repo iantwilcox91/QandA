@@ -4,7 +4,7 @@
   <button {{action 'addToFavorites' question}} class="btn btn-warning">Add to Favorites</button>
   {{#if areNotesShowing}}
     <p>They also had this to add:</p>
-    <p>{{question.notes}}</p>
+    <p class="thick">{{question.notes}}</p>
     <button {{action 'hideNotes'}} class="btn btn-success">Hide notes</button>
   {{else}}
     <button {{action 'showNotes'}} class="btn btn-success">Show notes</button>
